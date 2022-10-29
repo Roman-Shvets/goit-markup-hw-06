@@ -65,12 +65,12 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <form action="">
-                <div class="modal-close-button" data-modal-close>
-                  <svg width="11px" height="11px">
-                    <use href="./images/icons.svg#icon-close-cross"></use>
-                  </svg>
-                </div>
+              <div class="modal-close-button" data-modal-close>
+                <svg width="11px" height="11px">
+                  <use href="./images/icons.svg#icon-close-cross"></use>
+                </svg>
+              </div>
+              <form>
                 <div class="form-contact">
                   <p class="form-title">
                     Залиште свої дані, ми вам передзвонимо
@@ -121,29 +121,22 @@
                     <label class="label-style" for="feedback">Коментар</label>
                     <textarea
                       class="textarea-style"
-                      type="text"
                       id="feedback"
                       placeholder="Введіть текст"
                       name="user-text"
                     ></textarea>
                   </div>
-                  <div class="confirm-block">
-                    <label class="checkbox-label">
-                      <input
-                        class="checkbox-input"
-                        type="checkbox"
-                        name="confirm-box"
-                      />
-                      <span class="check-icon"></span>
-                      Погоджуюся з розсилкою та приймаю
-                      <a href="#" class="contract-terms">Умови договору</a>
-                    </label>
-                  </div>
-                  <div>
-                    <button type="Submit" class="form-button">
-                      Відправити
-                    </button>
-                  </div>
+                  <label class="checkbox-label">
+                    <input
+                      class="checkbox-input"
+                      type="checkbox"
+                      name="confirm-box"
+                    />
+                    <span class="check-icon"></span>
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="contract-terms">Умови договору</a>
+                  </label>
+                  <button type="Submit" class="form-button">Відправити</button>
                 </div>
               </form>
             </div>
@@ -541,12 +534,12 @@
             </li>
           </ul>
         </div>
-        <div type="subscribe-group">
+        <div class="subscribe-group">
           <p class="join-title">Підпишіться на розсилку</p>
-          <form class="mail-subscribe" action="">
+          <form class="mail-subscribe">
             <label for="client-mail" class="visually-hidden">E-mail</label>
             <input
-              type="mail"
+              type="email"
               name="client-mail"
               id="client-mail"
               placeholder="E-mail"
